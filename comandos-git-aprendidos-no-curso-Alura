@@ -1,0 +1,89 @@
+Comandos git aprendidos no curso Alura
+
+
+git init
+inicia um repositório
+
+diff 
+mostra o que foi alterado de uma versão pra outra em um arquivo
+
+sintaxe : 
+git diff <versão inicial comparada> <versão final comparada>
+
+exemplo:
+git diff v0.1 v0.2
+------------------------------------------------------------
+
+git blame
+mostra as alterações também, só que linha por linha
+em qual commit foi acrescentada essa alteração
+qual o nome do arquivo quando uma alteração foi feita
+quem fez a alteração
+quando foi feito o commit com a alteração
+tudo isso com as informações mais recentes do arquivo
+
+sintaxe:
+git blame <nome do arquivo>
+
+exemplo:
+git blame css/index.css
+------------------------------------------------------------
+
+git clone
+clona um repositório remoto 
+
+
+sintaxe:
+git clone https://github.com/jcfonsecagit/repositorio.git
+------------------------------------------------------------
+
+git init
+inicia um repositório
+
+------------------------------------------------------------
+
+git config 
+configura usuário/ email
+
+sintaxe:
+git config user.name <nome do usuário entre aspas>
+
+exemplo
+git config user.name "Jon Snow"
+
+sintaxe:
+git config user.email <email do usuário entre aspas>
+
+exemplo:
+git config user.email "jonsnow@knownothing.com"
+------------------------------------------------------------
+
+
+git ls-files
+informa quais os arquivos estão sendo controlados pelo git no repositório
+
+------------------------------------------------------------
+
+git status
+mostra o estado atual do nosso repositório para o git
+------------------------------------------------------------
+
+git add 
+adiciona arquivos novos e/ou alterados ao repositório
+
+sintaxe:
+git add <nome do arquivo>
+
+exemplo:
+git add index.html
+------------------------------------------------------------
+
+git commit
+grava as alterações feitas nos arquivos
+
+sintaxe:
+git commit -m <mensagem que explica o commit entre aspas>
+
+exemplo
+git commit -m "Alteração do título da página"
+------------------------------------------------------------
