@@ -42,4 +42,10 @@ git config user.email "pauloilarde@gmail.com"
 ** git remote add <nome do repositório> <url do repositório> - informa o endereço de origem do repositório remoto
 git remote add origin https://github.com/pauloilarde/curso-git.git
 
-** git push - manda as alterações do repositório local para o repositório remoto
+** git push <repositório> <branch> - manda as alterações do repositório local para o repositório remoto
+git push origin master
+
+**git clone <url do repositório> - copia um repositório já existente para sua máquina
+e automaticamente cria um novo diretório na máquina, com o mesmo nome 
+git clone https://github.com/pauloilarde/curso-git.git
+
