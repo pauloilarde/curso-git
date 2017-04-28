@@ -49,3 +49,10 @@ git push origin master
 e automaticamente cria um novo diretório na máquina, com o mesmo nome 
 git clone https://github.com/pauloilarde/curso-git.git
 
+**git branch - mostra quais as branchs do repositório atual
+**git branch <nome da branch> - cria uma branch nova
+git branch design
+
+** git checkout <nome da branch> - troca de branch
+git checkout design
+
