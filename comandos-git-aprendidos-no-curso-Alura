@@ -1,89 +1,45 @@
-Comandos git aprendidos no curso Alura
+** git diff <versão inicial> <versão posterior> - permite ver o que foi alterado em cada uma das
+versões, o que tinha no arquivo, o que mudou, o que entrou, o que saiu
 
-
-git init
-inicia um repositório
-
-diff 
-mostra o que foi alterado de uma versão pra outra em um arquivo
-
-sintaxe : 
-git diff <versão inicial comparada> <versão final comparada>
-
-exemplo:
 git diff v0.1 v0.2
-------------------------------------------------------------
 
-git blame
-mostra as alterações também, só que linha por linha
-em qual commit foi acrescentada essa alteração
-qual o nome do arquivo quando uma alteração foi feita
-quem fez a alteração
-quando foi feito o commit com a alteração
-tudo isso com as informações mais recentes do arquivo
+** git blame <nome do arquivo>  - mostra alterações feitas no arquivo linha por linha, 
+com detalhes como: quem fez a alteração, quando fez, o que alterou, quando foi feita
+a alteração, ou ainda: qual o nome do arquivo quando aquela linha foi alterada
 
-sintaxe:
-git blame <nome do arquivo>
-
-exemplo:
 git blame css/index.css
-------------------------------------------------------------
 
-git clone
-clona um repositório remoto 
-
-
-sintaxe:
-git clone https://github.com/jcfonsecagit/repositorio.git
-------------------------------------------------------------
-
-git init
-inicia um repositório
-
-------------------------------------------------------------
-
-git config 
-configura usuário/ email
-
-sintaxe:
-git config user.name <nome do usuário entre aspas>
-
-exemplo
-git config user.name "Jon Snow"
-
-sintaxe:
-git config user.email <email do usuário entre aspas>
-
-exemplo:
-git config user.email "jonsnow@knownothing.com"
-------------------------------------------------------------
+**git init - transforma uma pasta comum num repositório
+um repositório nada mais é do que uma pasta que o git controla
 
 
-git ls-files
-informa quais os arquivos estão sendo controlados pelo git no repositório
+**git init - transforma uma pasta comum num repositório
+um repositório nada mais é do que uma pasta que o git controla
 
-------------------------------------------------------------
+**git ls-files - é o comando pra saber quais arquivos o git controla dentro daquela pasta
 
-git status
-mostra o estado atual do nosso repositório para o git
-------------------------------------------------------------
+**git status - mostra o estado atual do nosso repositório pro git
+caso algum arquivo tenha sido colocado na pasta, mas ainda não esteja no repositório,
+o git vai mostrar o nome do arquivo em vermelho e a palavra untracked file(s)
+isso significa que o git vê que os arquivos existem, mas não monitora as alterações dele
 
-git add 
-adiciona arquivos novos e/ou alterados ao repositório
+** git add <nome do arquivo> - adiciona os arquivos de uma pasta para um repositório
+ao dar esse comando, nós falamos pro git: git, acompanha as alterações desse arquivos aqui
 
-sintaxe:
-git add <nome do arquivo>
-
-exemplo:
 git add index.html
-------------------------------------------------------------
 
-git commit
-grava as alterações feitas nos arquivos
 
-sintaxe:
-git commit -m <mensagem que explica o commit entre aspas>
+**git commit -m <mensagem que explica as alterações feitas> - grava alterações num arquivo
+git commit -m "Criando o projeto"
 
-exemplo
-git commit -m "Alteração do título da página"
-------------------------------------------------------------
+**git config user.name <nome entre aspas> - configura o nome de usuário
+git config user.name "Paulo"
+
+**git config user.email <email entre aspas> - configura o email do usuário
+git config user.email "pauloilarde@gmail.com" 
+
+** git remote - adiciona um repositório remoto
+** git remote add <nome do repositório> <url do repositório> - informa o endereço de origem do repositório remoto
+git remote add origin https://github.com/pauloilarde/curso-git.git
+
+** git push - manda as alterações do repositório local para o repositório remoto
