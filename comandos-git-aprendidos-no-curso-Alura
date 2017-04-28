@@ -56,3 +56,6 @@ git branch design
 ** git checkout <nome da branch> - troca de branch
 git checkout design
 
+** git merge <branch alterada> - copia o conteúdo da branch 
+alterada para a branch master (desde que esteja na master ao dar o comando)
+
