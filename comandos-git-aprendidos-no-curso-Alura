@@ -60,3 +60,11 @@ git checkout design
 alterada para a branch master (desde que esteja na master ao dar o comando)
 
 ** git rebase <branch base> <branch a ser atualizada> - atualiza o conteúdo da uma branch, com base em outra
+
+**git reset - volta o estado do código pra o que era no último commit, descartando o que foi feito do estado resetado em diante
+
+**git revert - desfaz uma alteração específica, sem reverter alterações posteriores à revertida
+
+**git stash - salva as alterações feitas num código, mas num lugar diferente do que salvaria se fosse commitar
+
+**git bisect - um comando de busca pra localizar quando um bug começou a existir no sistema
